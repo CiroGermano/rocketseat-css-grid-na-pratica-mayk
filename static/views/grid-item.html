@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Grid Item</title>
+
+  <link rel="stylesheet" href="../style/style.css">
+  <link rel="stylesheet" href="../style/grid-content.css">
+  <link rel="stylesheet" href="../style/grid-item.css">
+  <link rel="stylesheet" href="../style/grid-item-start-end.css">
+  <link rel="stylesheet" href="../style/grid-item-center-center.css">
+  <link rel="stylesheet" href="../style/grid-item-end-end.css">
+
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+
+  <title>Grid Item</title>
+</head>
+
+<body id="index-page">
+  <div id="container">
+    <header></header>
+    <footer></footer>
+    <main>
+      <div class="topic">
+        <h2>Posicionamento Grid Item</h2>
+        <p>Permite alinhar os itens da grid em qualquer espaço da célula que ele ocupa.</p>
+        <ul>
+          <li>align-item</li>
+          <li>justify-item</li>
+        </ul>
+
+        <div class="container-grid">
+          <div class="grid-content">
+            <div><span>Célula</span></div>
+            <div><span>Célula</span></div>
+            <div><span>Célula</span></div>
+            <div><span>Célula</span></div>
+            <div><span>Célula</span></div>
+            <div><span>Célula</span></div>
+            <div><span>Célula</span></div>
+            <div><span>Célula</span></div>
+            <div><span>Célula</span></div>
+          </div>
+          <div class="ex-legend">
+            <!-- <p>Célula</p> -->
+          </div>
+        </div>
+
+        <div class="container-grid">
+          <div class="grid-item-position-start-end">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+          <div class="ex-legend">
+            <p>align-item: flex-start <br /> justify-item: flex-end</p>
+          </div>
+        </div>
+
+        <div class="container-grid">
+          <div class="grid-item-position-center-center">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+          <div class="ex-legend">
+            <p>align-item: center <br /> justify-item: center</p>
+          </div>
+        </div>
+
+        <div class="container-grid">
+          <div class="grid-item-position-end-end">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div id="div-diferentona"></div>
+            <div></div>
+            <div></div>
+          </div>
+          <div class="ex-legend">
+            <p>align-item: flex-end <br /> justify-item: flex-end</p>
+          </div>
+        </div>
+
+      </div>
+    </main>
+
+  </div>
+</body>
+
+</html>

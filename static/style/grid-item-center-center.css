@@ -1,0 +1,18 @@
+.container-grid .grid-item-position-center-center {
+  width: 200px;
+  height: 200px;
+  margin: 0 auto 0;
+  background-color: black;
+  display: grid;
+  grid-gap: 5px;
+  grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+  align-items: center;
+  justify-items: center;
+}
+
+.container-grid .grid-item-position-center-center>div {
+  background-color: #7159c1;
+  width: 50%;
+  height: 50%;
+}
+

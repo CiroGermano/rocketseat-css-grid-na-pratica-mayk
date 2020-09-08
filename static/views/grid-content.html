@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Grid Content</title>
+
+  <link rel="stylesheet" href="../style/style.css">
+  <link rel="stylesheet" href="../style/grid-content.css">
+  <link rel="stylesheet" href="../style/grid-content-center.css">
+  <link rel="stylesheet" href="../style/grid-content-space-between.css">
+  <link rel="stylesheet" href="../style/grid-content-mix.css">
+
+
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body id="grid-content-page">
+  <div id="container">
+    <header></header>
+    <footer></footer>
+    <main>
+      <div class="topic">
+        <h2>Posicionamento Grid Content</h2>
+        <h3>Dentro da Grid Area</h3>
+        <p>É raro fixar o tamanho da área do grid de maneira estática (nesse caso em px), pois podemos terminar com um
+          grid pequeno. A maneira mais comum é usando tamanhos relativos (ex: fr).</p>
+        <p>Grid com tamanho estático: 3 linhas 20px cada ; 3 colunas 20px cada</p>
+        <p>Geralmente o Grid fica menor do que a área definida quando fixamos seu tamanho estaticamente. Desse modo
+          podemos usar duas propriedades para alinhamento da própria grid:
+        </p>
+        <ul>
+          <li>justify-content</li>
+          <li>align-content</li>
+        </ul>
+        <p>Para essas propriedades temos os seguintes valores:</p>
+        <ul>
+          <li>start</li>
+          <li>end</li>
+          <li>center</li>
+          <li>stretch</li>
+          <li>space-between</li>
+          <li>space-around</li>
+          <li>space-evenly</li>
+        </ul>
+        <p>Veja os exemplos abaixo e brinque com as combinações que podem ser feitas:</p>
+        <div class="container-grid">
+          <div class="grid-content-center">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+          <div class="ex-legend">
+            <p>justify-content: center <br>align-content: center</p>
+          </div>
+        </div>
+
+        <div class="container-grid">
+          <div class="grid-content-space-between">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+          <div class="ex-legend">
+            <p>justify-content: space-between <br />align-content: space-between</p>
+          </div>
+        </div>
+
+        <div class="container-grid">
+          <div class="grid-content-mix">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+          <div class="ex-legend">
+            <p>justify-content: flex-end <br />align-content: align-start</p>
+          </div>
+        </div>
+      </div>
+
+
+    </main>
+
+
+  </div>
+</body>
+
+</html>

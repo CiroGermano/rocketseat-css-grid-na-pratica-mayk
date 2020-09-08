@@ -1,0 +1,17 @@
+.container-grid .grid-item-position-end-end {
+  width: 200px;
+  height: 200px;
+  margin: 0 auto 0;
+  background-color: black;
+  display: grid;
+  grid-gap: 5px;
+  grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+  align-items: flex-end;
+  justify-items: flex-end;
+}
+
+.container-grid .grid-item-position-end-end>div {
+  background-color: #7159c1;
+  width: 50%;
+  height: 50%;
+}

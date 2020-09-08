@@ -1,0 +1,52 @@
+.container-grid .grid-content>div {
+  background-color: #7159c1;
+  width: 50%;
+  height: 50%;
+}
+
+.container-grid .grid-content :nth-child(1) {
+  background-color: #7159c1;
+  align-self: flex-start;
+  justify-self: flex-end;
+}
+
+.container-grid .grid-content :nth-child(2) {
+  background-color: #7159c1;
+  align-self: flex-end;
+  justify-self: center;
+}
+
+.container-grid .grid-content :nth-child(3) {
+  background-color: #7159c1;
+  align-self: flex-start;
+  justify-self: flex-start;
+}
+
+.container-grid .grid-content :nth-child(5) {
+  background-color: #7159c1;
+  align-self: center;
+  justify-self: center;
+}
+
+.container-grid .grid-content :nth-child(6) {
+  background-color: #7159c1;
+  align-self: flex-start;
+  justify-self: flex-end;
+}
+
+.container-grid .grid-content :nth-child(8) {
+  background-color: #7159c1;
+  align-self: flex-end;
+  justify-self: center;
+}
+
+.container-grid .grid-content :nth-child(9) {
+  background-color: #7159c1;
+  align-self: flex-start;
+  justify-self: flex-end;
+}
+
+/* .item1 {
+  align-self: center;
+  justify-self: center;
+} */

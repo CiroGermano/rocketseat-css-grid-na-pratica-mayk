@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Grid</title>
+
+  <link rel="stylesheet" href="./static/style/style.css">
+
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body id="index-page">
+  <div id="container">
+    <header></header>
+    <main>
+
+      <div class="topic">
+        <h2>Grid</h2>
+        <ul>
+          <li>Bidimencional</li>
+          <li>Divisão de toda página em linhas e colunas</li>
+          <li>Colocar elementos onde quiser nessa divisão</li>
+        </ul>
+      </div>
+
+      <div class="topic">
+        <h2>Grid ou Flexbox ?</h2>
+        <ul>
+          <li>Grid: Duas dimensões (colunas e linhas)</li>
+          <li>Flexbox: Uma dimensão (linha ou coluna)</li>
+          <li>Um complementa o trabalho do outro</li>
+          <li>Verificar quais navegadores ainda não aceitam grid</li>
+        </ul>
+      </div>
+
+      <div class="topic">
+        <h2>Propriedades</h2>
+        <p>Bora separar em dois grupos: <strong>'container'</strong> e <strong>'item(s)'</strong> </p>
+        <ul>
+          <li class='item-list'>
+            Container
+            <ul>
+              <li>display: grid</li>
+              <li>grid-template-columns</li>
+              <li>grid-template-rows</li>
+              <li>grid-gap</li>
+              <li>
+                grid-template-areas
+                <ul>
+                  <li>Maneira mais rápida de definir linhas e colunas</li>
+                  <li>Nomes são definidos para cada área do template.</li>
+                  <li>Devemos atribuir a propriedade ** grid-área: "name" ** aos elementos que compõem a grid</li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li>
+            Iten(s)
+            <ul>
+              <li>
+                grid-column (onde ficarão nossos itens?)
+                <ul>
+                  <li>grid-column-start</li>
+                  <li>
+                    grid-column-end
+                    <ul>
+                      <li>Forma reduzida --> grid-column start / end</li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                grid-row (onde ficarão nossos itens?)
+                <ul>
+                  <li>grid-row-start</li>
+                  <li>
+                    grid-row-end
+                    <ul>
+                      <li>Forma reduzida --> grid-row start / end</li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li>... mais duas propriedades de alinhamento</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+
+      <div class="topic">
+        <h2>Exemplos práticos</h2>
+        <p>Segue alguns links com exemplos práticos do conteúdo. É interessante que veja o código HTML e CSS para
+          entender a aplicação dos conceitos.</p>
+        <ul>
+          <li><a target="_blank" href="./static/views/grid-fundamentos.html">Grid Container</a></li>
+          <li><a target="_blank" href="./static/views/grid-content.html">Grid Content - posicionamento</a></li>
+          <li><a target="_blank" href="./static/views/grid-item.html">Grid Item - posicionamento</a></li>
+          <li><a target="_blank" href="./static/views/grid-self.html">Grid self - posicionamento</a></li>
+        </ul>
+      </div>
+    </main>
+    <aside></aside>
+    <footer></footer>
+  </div>
+</body>
+
+</html>

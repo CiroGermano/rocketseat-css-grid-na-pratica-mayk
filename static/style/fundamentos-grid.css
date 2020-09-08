@@ -1,0 +1,41 @@
+ /* reset css */
+
+ html, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: #7159C1;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-template-rows: 20vh 70vh 10vh;
+  /* caso queira que o header ocupe apenas uma coluna devemos colocar "h ." o "." simboliza "nada na segunda coluna" */
+  grid-template-areas: "h h" "m a" "f f";
+}
+
+header {
+  grid-area: h;
+  display: grid;
+  background: yellow;
+}
+
+main {
+  grid-area: m;
+  background: blue;
+}
+
+main a {
+  color: black;
+}
+
+aside {
+  grid-area: a;
+  background: green;
+}
+
+footer {
+  grid-area: f;
+  background: red;
+}
